@@ -1,0 +1,17 @@
+body{
+    /* property: value; */
+   background-color: rgb(3, 3, 99); 
+   color: rgb(226, 223, 223);
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+   font-size: large;           
+}
+
+h2{
+    text-shadow: 1px 1px red;
+}
+
+/* to make bold text set the font-weight to bold */
+p{
+    font-weight: bold;  
+    padding: 20px;          
+}
