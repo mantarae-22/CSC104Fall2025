@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-image: url('./images/bart-zimny-W5XTTLpk1-I-unsplash.jpg');
+    background-position: center;
+}
+
+header{
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li{
+    text-wrap: nowrap;
+    margin: 15px;
+    display: inline-block;
+}
+
+/* this is the most specific/narrow way to set up the styling for the links;
+   a would be the most general way to set up the styles, but then they would apply to every link on the page, which we probably don't need */
+nav ul li a{
+    text-decoration: none;
+    background-color: rgb(11, 41, 11);
+    color: whitesmoke;
+    padding: 15px;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+h1{
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(11, 41, 11);
+    padding: 30px;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;            
+    background-color: rgb(11, 41, 11);
+    padding: 30px;
+    align-items: center;
+}
+
+/* make the columns stack on the smaller screen */
+@media (max-width: 768px){
+    main{
+        flex-direction: column;
+    }
+}
+
+section{
+    padding: 20px;
+}
+
+/* make the bookend images much smaller */
+.years img{
+    width: 200px;
+    border-radius: 10px;
+}
